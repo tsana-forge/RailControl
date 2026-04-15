@@ -10,6 +10,10 @@
 
 The project is distinguished by its **exceptional documentation**. Every component, procedure, and decision has been documented in plain language with practical examples, designed to be accessible to both experienced electronics enthusiasts and those new to Raspberry Pi projects. The goal is not just to publish working code, but to create a **complete guide** that others can follow, adapt, and improve.
 
+Claude (Anthropic) has been used at various points, primarily to help in the creation of documents from initial specifications. This is a hobbyest project shared openly under GNU GPL v3, to enable others who may not have in depth technical knowledge to create their own system that matches their needs. AI LLM's can be a powerufl tool to accelerate the development process. There are some graphical errors within the schematic drawings, particuarly overlaps and text tightly placed At some point these will hopefully be redrawn in a real CAD program, for now it serves its intended purpose.
+
+Whilst I am comfortable in its use and recongise its value in the afformentioned acceleration, I also recongise that some find the use of AI objectionable, hence this explanation and diclosure being included. To avoid repitition it is NOT referenced in all files where Claude has been utilised, but this, or a similar disclaimer should be included if you opt to clone the repository for use in line with the GNU GPL v3
+
 ---
 
 ## Features

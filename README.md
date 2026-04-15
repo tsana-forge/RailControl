@@ -1,4 +1,4 @@
-# RAIL CONTROL
+# RAIL STACK
 
 > A Raspberry Pi 5–based control system for G scale (LGB) garden railway signals, street lighting, and turnouts. Designed for outdoor installation with comprehensive documentation aimed at hobbyists and railway enthusiasts who want to automate their layouts.
 
@@ -6,7 +6,7 @@
 
 ## Overview
 
-**RAIL CONTROL** is an open-source hardware and software project that brings automation and live control to garden-scale model railway layouts. Using a Raspberry Pi 5 as the central controller, the system manages up to 48 LED signal outputs, 6 turnout motors, and block detection via Hall effect sensors — all suitable for long outdoor cable runs in harsh garden environments.
+**RAIL STACK** is an open-source hardware and software project that brings automation and live control to garden-scale model railway layouts. Using a Raspberry Pi 5 as the central controller, the system manages up to 48 LED signal outputs, 6 turnout motors, and block detection via Hall effect sensors — all suitable for long outdoor cable runs in harsh garden environments.
 
 The project is distinguished by its **exceptional documentation**. Every component, procedure, and decision has been documented in plain language with practical examples, designed to be accessible to both experienced electronics enthusiasts and those new to Raspberry Pi projects. The goal is not just to publish working code, but to create a **complete guide** that others can follow, adapt, and improve.
 
@@ -77,7 +77,7 @@ RAIL CONTROL/
 │   │
 │   ├── Architecture/
 │   │   ├── README.md                      (hardware overview)
-│   │   ├── rail-control-design-spec.md    (UI/UX specification)
+│   │   ├── rail-stack-design-spec.md    (UI/UX specification)
 │   │   └── TSANA_FORGE_BRAND_GUIDE.md     (branding standards)
 │   │
 ├── Hardware/
@@ -94,16 +94,16 @@ RAIL CONTROL/
 │   │   ├── led_driver.py                  (Stage 3 circuits)
 │   │   ├── relay_control.py               (Stage 4 turnouts)
 │   │   ├── hall_sensor.py                 (Stage 5 detection)
-│   │   └── rail_control.py                (main application)
+│   │   └── rail_stack.py                (main application)
 │   │
 │   └── libs/
 │       └── (adafruit-circuitpython-mcp230xx, smbus2, etc.)
 │
 ├── Frontend/
-│   ├── rail-control.html                  (live control panel)
+│   ├── rail-stack.html                  (live control panel)
 │   ├── rail-editor.html                   (layout design tool)
 │   └── css/
-│       └── rail-control.css               (Tsana Forge styled)
+│       └── rail-stack.css               (Tsana Forge styled)
 │
 └── LICENSE                                (GNU GPL v3)
 ```
@@ -139,7 +139,7 @@ RAIL CONTROL/
 
 - Hardware architecture finalised
 - Breadboard testing regime (Stages 0–7) documented and validated
-- Browser-based control panel (rail-control.html) functional
+- Browser-based control panel (rail-stack.html) functional
 - Layout editor (rail-editor.html) with named save/load
 - Outdoor enclosure design and weatherproofing procedures
 
@@ -188,7 +188,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) — we welcome bug reports, documentation
 
 ## Why Documentation Matters
 
-Most electronics projects share working code but assume you already know *why* it works, *how* to adapt it, and *what* to do when it breaks. **RAIL CONTROL is different.**
+Most electronics projects share working code but assume you already know *why* it works, *how* to adapt it, and *what* to do when it breaks. **RAIL STACK is different.**
 
 Every document in this repository was written with one goal: **to make it possible for someone with no prior experience to build and troubleshoot this system independently**.
 
@@ -198,7 +198,7 @@ Every document in this repository was written with one goal: **to make it possib
 - **Plain language** — no jargon without explanation
 - **Cross-referencing** — guides link to each other so you're never lost
 
-This approach makes RAIL CONTROL a **blueprint for how to document hobby electronics projects** in a way that's accessible to newcomers while remaining useful to experts.
+This approach makes RAIL STACK a **blueprint for how to document hobby electronics projects** in a way that's accessible to newcomers while remaining useful to experts.
 
 ---
 
@@ -271,7 +271,7 @@ Full Bill of Materials in `hardware/BOM.md`.
 **Why stripboard instead of custom PCB?**
 — For hobbyist production (1–5 units), stripboard is faster and cheaper than PCB fabrication. Single-sided layout is easier to debug and repair.
 
-See `rail-control-design-spec.md` for detailed design rationale.
+See `rail-stack-design-spec.md` for detailed design rationale.
 
 ---
 
@@ -330,7 +330,7 @@ See [LICENSE](LICENSE) file for full details.
 
 ## About Tsana Forge
 
-RAIL CONTROL is published under the **Tsana Forge** label — a collection of homelab tools, game server utilities, and hobby projects built for personal use and shared with the community.
+RAIL STACK is published under the **Tsana Forge** label — a collection of homelab tools, game server utilities, and hobby projects built for personal use and shared with the community.
 
 Tsana Forge philosophy:
 - **Honest** — tools do what they say, no marketing
@@ -363,13 +363,13 @@ More at [tsana.net](https://tsana.net)
 
 ## Contact
 
-- **Issues & feature requests** — [GitHub Issues](https://github.com/tsana-forge/rail-control/issues)
-- **Discussions & feedback** — [GitHub Discussions](https://github.com/tsana-forge/rail-control/discussions)
+- **Issues & feature requests** — [GitHub Issues](https://github.com/tsana-forge/rail-stack/issues)
+- **Discussions & feedback** — [GitHub Discussions](https://github.com/tsana-forge/rail-stack/discussions)
 - **Email** — contact@tsana.net
 
 ---
 
-*RAIL CONTROL — Raspberry Pi 5 Garden Railway Automation System*
+*RAIL STACK — Raspberry Pi 5 Garden Railway Automation System*
 
 *© 2026 Tsana Forge. Released under GNU GPL v3.*
 

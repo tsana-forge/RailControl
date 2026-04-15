@@ -118,7 +118,7 @@ RAIL CONTROL/
 |---|---|---|---|
 | 5V DC | 5V | Raspberry Pi, logic, relay coils | 2A minimum |
 | 12V DC | 12V | LED signal outputs (48×) | 2A sufficient |
-| 18V AC | 18V AC | Turnout motors (via relay) | LGB transformer |
+| 18V DC | 18V DC | Turnout motors (via relay) | 2A sufficent |
 
 **GPIO expansion** via MCP23017 I²C boards (×3):
 - **Board 0x20** — LED outputs 1–16 (signals)
@@ -263,10 +263,10 @@ Full Bill of Materials in `hardware/BOM.md`.
 — The Pi only has 27 usable GPIO pins. Three MCP23017 boards give us 48 outputs via just two I²C wires (SDA/SCL).
 
 **Why relay switching instead of direct transistor PWM?**
-— LGB motors are AC devices internally rectified to DC via capacitor splitting. A single SPDT relay per turnout switches polarity; PWM is unnecessary and adds complexity.
+— A single SPDT relay per turnout switches polarity; PWM is unnecessary and adds complexity.
 
 **Why Hall effect sensors over microswitches?**
-— Hall sensors are contactless (no corrosion), non-mechanical (no wear), and weather-proof. Outdoor reliability is paramount.
+— Hall sensors are contactless (no corrosion), non-mechanical (no wear), and weather-proof (when correctly prepared). Outdoor reliability is paramount.
 
 **Why stripboard instead of custom PCB?**
 — For hobbyist production (1–5 units), stripboard is faster and cheaper than PCB fabrication. Single-sided layout is easier to debug and repair.
@@ -344,12 +344,7 @@ More at [tsana.net](https://tsana.net)
 
 ## Acknowledgments
 
-This project was inspired by:
-- JMRI (Java Model Railroad Interface) — open-source train control
-- Model Railway Club enthusiasts worldwide
 - Raspberry Pi community — for excellent documentation standards
-
-Special thanks to everyone who tested early versions and provided feedback.
 
 ---
 
